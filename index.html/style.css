@@ -1,0 +1,172 @@
+/* 基本設定 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* 導覽列 */
+.navbar {
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* 歡迎標語 */
+.hero-section {
+    text-align: left;
+    padding: 40px 30px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.hero-section h1 { margin-bottom: 10px; }
+.hero-section p { color: #666; font-size: 14px; }
+
+/* 產品展示區 */
+.product-section {
+    padding: 0 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-image {
+    font-size: 80px; /* 這裡用 Emoji 假裝圖片 */
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.product-card h3 { margin: 10px 0; font-size: 18px;}
+.product-card .price { color: #666; font-size: 14px; margin-bottom: 15px; }
+
+/* 購買按鈕 */
+.btn-buy {
+    background-color: transparent;
+    border: 1px solid #007bff;
+    color: #007bff;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.btn-buy:hover { background-color: #007bff; color: white; }
+
+/* 訂單計算區 */
+.calculator-section {
+    padding: 40px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.calculator-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.calculator-card h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.form-group label {
+    width: 100px;
+    font-size: 14px;
+    color: #555;
+}
+
+.form-group select, .form-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    flex: 1;
+}
+
+.price-text { font-size: 14px; color: #555; }
+
+.btn-calculate {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.btn-calculate:hover { background-color: #218838; }
+
+.result-text {
+    color: #28a745;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+}

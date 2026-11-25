@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Tech 智能小鋪</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 頂部導覽列 -->
+    <nav class="navbar">
+        <div class="logo">Vibe Tech 智能小鋪</div>
+        <ul class="nav-links">
+            <li><a href="#">首頁</a></li>
+            <li><a href="#products">產品</a></li>
+            <li><a href="#order">立即訂購</a></li>
+        </ul>
+    </nav>
+
+    <!-- 歡迎標語區 -->
+    <header class="hero-section">
+        <h1>歡迎來到 Vibe Tech</h1>
+        <p>這裡利用 AI 操作與 Vibe Coding 技巧製作，提供最新的智能配件，讓你的生活充滿科技感！</p>
+    </header>
+
+    <!-- 產品展示區 -->
+    <section id="products" class="product-section">
+        <h2>熱門產品</h2>
+        <div class="product-grid">
+            
+            <!-- 產品卡片 1 -->
+            <div class="product-card">
+                <!-- 使用 Emoji 代替圖片，確保你馬上能看到效果。之後可換成 <img src="watch.jpg"> -->
+                <div class="product-image">⌚</div> 
+                <h3>Vibe Watch Pro</h3>
+                <p class="price">HKS 1200</p>
+                <button class="btn-buy" onclick="selectProduct(1200)">選購</button>
+            </div>
+
+            <!-- 產品卡片 2 -->
+            <div class="product-card">
+                <div class="product-image" style="background-color: #ffeb3b;">🎧</div>
+                <h3>AI 降噪耳機</h3>
+                <p class="price">HKS 800</p>
+                <button class="btn-buy" onclick="selectProduct(800)">選購</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 訂單計算區 (對應截圖) -->
+    <section id="order" class="calculator-section">
+        <div class="calculator-card">
+            <h3>計算訂單總額</h3>
+            
+            <div class="form-group">
+                <label for="productSelect">選擇貨物：</label>
+                <select id="productSelect" onchange="updatePriceDisplay()">
+                    <option value="1200">Vibe Watch Pro (HKS 1200)</option>
+                    <option value="800">AI 降噪耳機 (HKS 800)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quantityInput">選擇數量：</label>
+                <input type="number" id="quantityInput" value="1" min="1">
+            </div>
+
+            <div class="form-group">
+                <label>單價：</label>
+                <span class="price-text" id="unitPriceDisplay">HKS 1200</span>
+            </div>
+
+            <button class="btn-calculate" onclick="calculateTotal()">計算總額</button>
+
+            <div class="result-text" id="resultDisplay"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
